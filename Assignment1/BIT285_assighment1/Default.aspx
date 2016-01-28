@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <h1>Automatic Passwaord Generator</h1>
+    <h1>Automatic Password Generator</h1>
     <p>Having a hard time thinking up a unique and memorable password? Enter the information below to automatically generate possible passwords.</p>
         <asp:Label runat="server">Last name</asp:Label><br />
         <asp:TextBox ID="LastName" runat="server"></asp:TextBox>   
@@ -22,13 +22,9 @@
         <asp:TextBox ID="FavouriteColor" runat="server"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="Suggest Passwords >>>" Width="272px" />
-            <asp:DropDownList ID="DropDownList1" runat="server" style="margin-left: 60px" Width="181px">
+            <asp:Button ID="SuggestBtn" runat="server" Text="Suggest Passwords >>>" Width="272px" OnClick="SuggestBtn_Click" />
+            <asp:DropDownList ID="SuggestionDdl" runat="server" style="margin-left: 60px" Width="181px">
                 <asp:ListItem>Bansblueenauer</asp:ListItem>
-                <asp:ListItem>blue1998B</asp:ListItem>
-                <asp:ListItem>19blue98</asp:ListItem>
-                <asp:ListItem>8991Bansenauer</asp:ListItem>
-                <asp:ListItem>BBlueblueblue</asp:ListItem>
             </asp:DropDownList>
         </p>
     </div> 

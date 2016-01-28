@@ -11,7 +11,21 @@ namespace BIT285_assighment1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+        }
+        
+        protected void SuggestBtn_Click(object sender, EventArgs e)
+        {
+            this.SuggestionDdl.Items.Clear();
+            this.SuggestionDdl.Items.Add(this.LastName.Text +
+                this.FavouriteColor.Text + this.BirthYear.Text);
+            this.SuggestionDdl.Items.Add(this.FavouriteColor.Text + this.FavouriteColor.Text +
+                this.BirthYear.Text);
+            this.SuggestionDdl.Items.Add(this.BirthYear.Text + this.LastName.Text +
+                this.LastName.Text);
+            this.SuggestionDdl.Items.Add(this.LastName.Text.Substring(0, 3) +
+                this.BirthYear.Text.Substring(2, 2) + this.FavouriteColor.Text);
+            this.SuggestionDdl.Items.Add(this.FavouriteColor.Text.Substring(1, 2) +
+                this.BirthYear.Text.Substring(2, 2) + this.LastName.Text);
         }
     }
 }
