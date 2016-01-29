@@ -22,13 +22,13 @@ namespace BIT285_assighment1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// LastName control.
+        /// txtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastName;
+        protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
         /// BirthYear control.
@@ -38,6 +38,24 @@ namespace BIT285_assighment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BirthYear;
+        
+        /// <summary>
+        /// RequiredYearOfBirth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredYearOfBirth;
+        
+        /// <summary>
+        /// FourDigit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator FourDigit;
         
         /// <summary>
         /// FavouriteColor control.

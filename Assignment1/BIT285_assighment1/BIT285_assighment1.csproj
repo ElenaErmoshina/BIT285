@@ -67,8 +67,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="login.aspx" />
+    <Content Include="NewAccount.aspx" />
     <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.2.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.0.js" />
+    <Content Include="Scripts\jquery-2.2.0.min.js" />
+    <Content Include="Scripts\jquery.validation.net.webforms.js" />
+    <Content Include="Scripts\jquery.validation.net.webforms.min.js" />
     <Content Include="Welcome.aspx" />
+    <Content Include="Scripts\jquery-2.2.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,17 +84,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="CreatePassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="CreatePassword.aspx.cs">
+      <DependentUpon>CreatePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="CreatePassword.aspx.designer.cs">
+      <DependentUpon>CreatePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -98,6 +105,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccount.aspx.cs">
+      <DependentUpon>NewAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewAccount.aspx.designer.cs">
+      <DependentUpon>NewAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Welcome.aspx.cs">
