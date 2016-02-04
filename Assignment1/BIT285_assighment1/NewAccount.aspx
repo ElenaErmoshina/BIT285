@@ -50,7 +50,7 @@
         <p>
         <asp:Label ID="Label4" runat="server" Text="Program Option"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="162px">
+        <asp:DropDownList ID="txtProgramOption" runat="server" Height="20px" Width="162px">
             <asp:ListItem> Web Developer Degree</asp:ListItem>
             <asp:ListItem>ETSP Degree</asp:ListItem>
             <asp:ListItem>Network Technology Degree</asp:ListItem>

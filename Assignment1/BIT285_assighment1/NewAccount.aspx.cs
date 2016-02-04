@@ -14,10 +14,7 @@ namespace BIT285_assighment1
 
         }
 
-        protected void EmailValidator_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            Console.WriteLine("");
-        }
+
 
         protected void EmailValidator_ServerValidate1(object source, ServerValidateEventArgs args)
         {
@@ -33,7 +30,14 @@ namespace BIT285_assighment1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Server.Transfer("CreatePassword.aspx", true);
+            if (Page.IsValid)
+            {
+                Session["firstName"] = txtFirstName.Text;
+                Session["lastName"] = txtLastName.Text;
+                Session["Email"] = txtEmail.Text;
+                Session["ProgramOption"] = txtProgramOption.Text;
+                Server.Transfer("CreatePassword.aspx", true);
+            }
         }
     }
 }

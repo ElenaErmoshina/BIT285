@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace BIT285_assighment1
 {
@@ -18,16 +19,34 @@ namespace BIT285_assighment1
         {
             if (UserName.Text == "Ian" && Password.Text == "password")
             {
+                Session["username"] = UserName.Text;
+                LogCurrentUser(UserName.Text);
                 Server.Transfer("Welcome.aspx");
             }
             else if (Password.Text == "")
             {
-                Server.Transfer("Default.aspx");
+                Server.Transfer("NewAccount.aspx");
             }
             else
             {
-                LoginError.Visible = true;
+                Session["username"] = UserName.Text;
+                LogCurrentUser(UserName.Text);
+                Server.Transfer("Welcome.aspx");
+                // LoginError.Visible = true;
             }
+        }
+
+        private void LogCurrentUser(string username)
+        {
+            var log = (DataTable)Application["visitorTable"];
+            var row = log.NewRow();
+
+            row["session_id"] = Guid.NewGuid().ToString();
+            row["username"] = username;
+            row["login_time"] = DateTime.Now;
+            row["ip_address"] = Request.UserHostAddress;
+
+            log.Rows.Add(row);
         }
     }
 }
