@@ -46,6 +46,13 @@
             ValidateEmptyText="True"
             ErrorMessage="*required"
             ForeColor="red" OnServerValidate="EmailValidator_ServerValidate1"></asp:CustomValidator>
+        &nbsp;&nbsp;
+            <asp:RegularExpressionValidator ID="txtFormat" runat="server" 
+            ErrorMessage="Email format invalid"
+            ControlToValidate="txtEmail"
+            ForeColor="red"
+            ValidationExpression="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+            </asp:RegularExpressionValidator>
         </p>
         <p>
         <asp:Label ID="Label4" runat="server" Text="Program Option"></asp:Label>

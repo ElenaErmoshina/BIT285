@@ -27,6 +27,7 @@
                  ValidationExpression="\d{4}?"
                 ForeColor="Red">
             </asp:RegularExpressionValidator>
+        &nbsp;
         </p>
         <p>
         <asp:Label runat="server">Favorite color</asp:Label><br />
@@ -38,6 +39,8 @@
             </asp:DropDownList>
         </p>
     </div> 
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server"
+        ForeColor="red" />
     </form>
 </body>
 </html>
