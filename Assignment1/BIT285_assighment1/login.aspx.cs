@@ -15,6 +15,8 @@ namespace BIT285_assighment1
 
         }
 
+        //In case of successful login the user is being sent to the welcome page. 
+        //Or the page will redirect the user to the new account page for the password.
         protected void Button1_Click(object sender, EventArgs e)
         {
             if (UserName.Text == "Ian" && Password.Text == "password")

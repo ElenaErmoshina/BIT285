@@ -15,7 +15,7 @@ namespace BIT285_assighment1
         }
 
 
-
+        //It checks if email box is checked and the email field is not empty.
         protected void EmailValidator_ServerValidate1(object source, ServerValidateEventArgs args)
         {
             if (this.CheckBox1.Checked && string.IsNullOrEmpty(args.Value))
@@ -28,6 +28,7 @@ namespace BIT285_assighment1
             }
         }
 
+        //Each item of data is collected to Session
         protected void Button1_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)
