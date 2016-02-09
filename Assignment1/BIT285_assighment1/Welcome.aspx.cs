@@ -15,18 +15,22 @@ namespace BIT285_assighment1
             GridDataBind();
         }
 
+        //It makes the label loged out invisible / visible.
+        //It refreshes table after the button is clicked.
         protected void Refresh_Click(object sender, EventArgs e)
         {
             loggedOutLabel.Visible = false;
             GridDataBind();
         }
 
+        //It says that the grid will get the data from visitor table.
         private void GridDataBind()
         {
             UserLogGrid.DataSource = (DataTable)Application["visitorTable"];
             UserLogGrid.DataBind();
         }
 
+        //Logged out cleans the session and removes the user form the list.
         protected void Logout_Click(object sender, EventArgs e)
         {
             loggedOutLabel.Visible = true;
