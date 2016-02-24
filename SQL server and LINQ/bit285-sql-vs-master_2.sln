@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bit285-sql-vs-master(1)", "bit285-sql-vs-master\", "{E86102BD-0F0C-4463-ADEA-30C37D721B6D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54061"
+		Debug.AspNetCompiler.PhysicalPath = "bit285-sql-vs-master\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54061\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54061"
+		Release.AspNetCompiler.PhysicalPath = "bit285-sql-vs-master\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54061\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54061"
+		SlnRelativePath = "bit285-sql-vs-master\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E86102BD-0F0C-4463-ADEA-30C37D721B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86102BD-0F0C-4463-ADEA-30C37D721B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
