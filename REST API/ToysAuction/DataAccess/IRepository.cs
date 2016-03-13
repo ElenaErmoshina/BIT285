@@ -10,5 +10,6 @@ namespace ToysAuction.DataAccess
     public interface IRepository
     {
         List<Toy> GetToys();
+        Toy CreateToy(Toy toy);
     }
 }

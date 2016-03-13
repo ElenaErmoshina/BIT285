@@ -48,5 +48,26 @@ namespace ToysAuction.DataAccess
 
             return result;
         }
+
+        public Toy CreateToy(Toy toy)
+        {
+
+            using (SqlConnection conn = new SqlConnection())
+            {
+                var query = string.Format("insert into toys ( Name, NumberLegs, ColorId, OwnerID ) values('{0}', '{1}','{2}','{3}')",
+                toy.Name, toy.NumberLegs, toy.ColorId, toy.OwnerId);
+
+                SqlCommand command = new SqlCommand(query);
+                conn.ConnectionString = this.connectionString.ConnectionString;
+                command.Connection = conn;
+
+                conn.Open();
+
+                command.ExecuteNonQuery();
+
+                return toy;
+            }
+
+        }
     }
 }

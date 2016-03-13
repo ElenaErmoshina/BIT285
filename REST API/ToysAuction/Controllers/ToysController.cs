@@ -21,6 +21,12 @@ namespace ToysAuction.Controllers
         {
             return this.repo.GetToys();
         }
+
+        public Toy Post(Toy toy)
+        {
+            this.repo.CreateToy(toy);
+            return toy;
+        }
     }
 
     

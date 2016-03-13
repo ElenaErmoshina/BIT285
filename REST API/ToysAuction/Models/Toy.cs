@@ -10,6 +10,8 @@ namespace ToysAuction.Models
         public string Name { get; set; }
         public int NumberLegs { get; set;}
         public string Color { get; set; }
+        public int ColorId { get; set; }
         public string Owner { get; set; }
+        public int OwnerId { get; set; }
     }
 }
