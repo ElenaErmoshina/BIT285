@@ -11,5 +11,13 @@ namespace ToysAuction.DataAccess
     {
         List<Toy> GetToys();
         Toy CreateToy(Toy toy);
+
+        List<Color> GetColors();
+
+        Color CreateColor(Color color);
+
+        List<User> GetUsers();
+
+        User CreateUser(User user);
     }
 }
