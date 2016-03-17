@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="NewAccount.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
@@ -113,6 +114,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewAccount.aspx.cs">
       <DependentUpon>NewAccount.aspx</DependentUpon>

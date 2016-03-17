@@ -12,6 +12,10 @@ namespace BIT285_assighment1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["username"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
             GridDataBind();
         }
 
@@ -46,6 +50,7 @@ namespace BIT285_assighment1
 
             Application["visitorTable"] = log;
             GridDataBind();
+            Response.Redirect("logout.aspx");
         }
     }
 }
